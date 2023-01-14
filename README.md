@@ -1,17 +1,18 @@
 # STCH Pack for BeamMP <!-- omit in toc -->
 
-A fork of many GitHub plugins for BeamMP with a touch of me and easy in
+A fork of many GitHub plugins for BeamMP with a touch of me and easy installation
 
-## Basic Setup
+## Basic Setup <!-- omit in toc -->
 
 This guide will walk through the most basic process of installing **STCH** onto a **BeamMP Server** and setting yourself as the **owner**
 
 This assumes you have successfully set up your own **BeamMP Server**, there is a guide **[here](https://wiki.beammp.com/en/home/server-installation)**
 
-- **Download** code of this Repository
+- **Download** Resources folder of this Repository
 - With the **BeamMP Server** ***NOT*** running:
-  - Extracted **STCH** in `…/Resources` directory
-- **Launch** the server
+  - Extracted in `…/Resources` directory
+  - Add `BeamMP.Server.Management.Tool.v2.1.1.exe` on your server Root folder if you want
+- **Launch** the server with `BeamMP.Server.Management.Tool.v2.1.1.exe` or `BeamMP.Server.exe`
 - In the **server console**, run the command `ce setgroup yourName owner`
   - Replacing `yourName` with your BeamMP username
 - Welcome on your **BeamMP Server**!
@@ -23,6 +24,7 @@ This assumes you have successfully set up your own **BeamMP Server**, there is a
   - [Features](#features)
 - [ChangeLogs](#changelogs)
   - [STCH Repository](#stch-repository)
+    - [**v00.0.2 - Update sources - 2023-01-14**](#v0002---update-sources---2023-01-14)
     - [**v00.0.1 - First push - 2023-01-14**](#v0001---first-push---2023-01-14)
   - [Cobalt Essentials](#cobalt-essentials)
     - [**v1.7.4**](#v174)
@@ -52,6 +54,12 @@ A Dear ImGui based interface for BeamMP Servers running CobaltEssentials
 # ChangeLogs
 
 ## STCH Repository
+
+### **v00.0.2 - Update sources - 2023-01-14**
+
+- Rework files structure and add Sources folder
+- Little update of Readme
+- 
 
 ### **v00.0.1 - First push - 2023-01-14**
 
@@ -258,6 +266,5 @@ This release improves time play reliability, has some small UI corrections, fixe
 ### **v0.0.1**<!-- omit in toc -->
 
 This is the initial GitHub release of this extension.
-
 
 **More Changelog [here](https://github.com/StanleyDudek/CobaltEssentialsInterface/releases)**

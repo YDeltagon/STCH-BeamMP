@@ -8,9 +8,9 @@ This guide will walk through the most basic process of installing **STCH** onto 
 
 This assumes you have successfully set up your own **BeamMP Server**, there is a guide **[here](https://wiki.beammp.com/en/home/server-installation)**
 
-- **Download** Resources folder of this Repository
+- **Download** `/Resources` folder and `*.exe` files of this Repository
 - With the **BeamMP Server** ***NOT*** running:
-  - Extracted in `…/Resources` directory
+  - Extracted
   - Add `BeamMP.Server.Management.Tool.v2.1.1.exe` on your server Root folder if you want
 - **Launch** the server with `BeamMP.Server.Management.Tool.v2.1.1.exe` or `BeamMP.Server.exe`
 - In the **server console**, run the command `ce setgroup yourName owner`
@@ -21,15 +21,21 @@ This assumes you have successfully set up your own **BeamMP Server**, there is a
 
 - [CobaltEssentials by prestonelam2003](#cobaltessentials-by-prestonelam2003)
 - [CobaltEssentialsInterface by StanleyDudek](#cobaltessentialsinterface-by-stanleydudek)
-  - [Features](#features)
+  - [Description](#description)
+  - [Preview](#preview)
+- [Server Management by SteliosLL](#server-management-by-steliosll)
+  - [Description](#description-1)
+  - [Preview](#preview-1)
 - [ChangeLogs](#changelogs)
   - [STCH Repository](#stch-repository)
-    - [**v00.0.2 - Update sources - 2023-01-14**](#v0002---update-sources---2023-01-14)
+    - [**v00.0.2 - Update sources and SM - 2023-01-14**](#v0002---update-sources-and-sm---2023-01-14)
     - [**v00.0.1 - First push - 2023-01-14**](#v0001---first-push---2023-01-14)
   - [Cobalt Essentials](#cobalt-essentials)
     - [**v1.7.4**](#v174)
   - [Cobalt Essentials Interface](#cobalt-essentials-interface)
     - [**v0.7.5 - hotfix**](#v075---hotfix)
+  - [Server Management](#server-management)
+    - [**v2.1.1**](#v211)
 
 # [CobaltEssentials](https://github.com/prestonelam2003/CobaltEssentials) by prestonelam2003
 
@@ -41,9 +47,7 @@ Copyright (C) 2020, Preston Elam (CobaltTetra) ALL RIGHTS RESERVED
 
 A Dear ImGui based interface for BeamMP Servers running CobaltEssentials
 
-![image](https://user-images.githubusercontent.com/49531350/198840124-8ed08ef6-7193-42ea-a3b5-54b3adcc4957.png)
-
-## Features
+## Description
 
 - Owner / Administrator / Moderator / Default interfaces based on groups!
 - Manipulation of player permissions, vehicle and parts permissions, CE and base server configuration, sun control and sync, weather control and sync, simulation speed control and sync, gravity control and sync, custom temperature curve control and sync, teleportation control and timeout, nametag whitelisting and timer based nametag hiding, server-wide and per-vehicle remote start/stop and freeze/unfreeze.
@@ -51,15 +55,29 @@ A Dear ImGui based interface for BeamMP Servers running CobaltEssentials
 - Handy `Join Race` and `Race Countdown` buttons to freeze all players in place, notify and countdown, and then release everyone for perfect race starts!
 - And more, all via the interface!
 
+## Preview
+
+![image](https://user-images.githubusercontent.com/49531350/198840124-8ed08ef6-7193-42ea-a3b5-54b3adcc4957.png)
+
+# [Server Management](https://github.com/SteliosLL/BeamMP-Server-Management-Tool) by SteliosLL
+
+## Description
+
+This small program will help you edit your server’s settings quick and easy, like the server name, description, port, auth key etc. One of the biggest features is that it makes changing maps very quick and easy. Simply select the one you like and save the settings! It also supports custom maps! You aren’t limited to the default beamng maps. It also has other useful features like mod and plugin management, server start-stop, restart timer etc.
+
+## Preview
+
+![image](https://user-images.githubusercontent.com/55713334/162746418-5a411f6a-f3f9-4835-96b4-d7e357c73633.png)
+
 # ChangeLogs
 
 ## STCH Repository
 
-### **v00.0.2 - Update sources - 2023-01-14**
+### **v00.0.2 - Update sources and SM - 2023-01-14**
 
+- [x] Added Server Management 2.1.1
 - Rework files structure and add Sources folder
 - Little update of Readme
-- 
 
 ### **v00.0.1 - First push - 2023-01-14**
 
@@ -268,3 +286,36 @@ This release improves time play reliability, has some small UI corrections, fixe
 This is the initial GitHub release of this extension.
 
 **More Changelog [here](https://github.com/StanleyDudek/CobaltEssentialsInterface/releases)**
+
+## Server Management
+
+### **v2.1.1**
+
+- Implemented all DLLs into the main executable. Now all you have to do is copy the executable into the BeamMP folder.
+- Updated the Help-Information window
+
+### **v2.0.1**<!-- omit in toc -->
+
+- Fixed an issue were if you had more than 10 players limit or
+more than 5 cars allowed per player in the config file, it would throw an error.
+
+### **v2.0.0**<!-- omit in toc -->
+
+- Custom map support
+- Mod Management
+- Plugin Management
+- The map selection window has been improved
+- Start-Stop server
+- Auto restart timer
+- Auto restart when config changes are detected
+- Log file and live log window
+- Abilitiy to use custom server executable
+- Button to quickly open mods, maps, plugins folders
+- TOML configuration file support
+- Removed ability to view larger map previews when you right click on maps
+
+### **v1.0.0**<!-- omit in toc -->
+
+- BeamMP Server Tool released
+
+**More Changelog [here](https://github.com/SteliosLL/BeamMP-Server-Management-Tool/releases)**

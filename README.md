@@ -28,6 +28,7 @@ This assumes you have successfully set up your own **BeamMP Server**, there is a
   - [Preview](#preview-1)
 - [ChangeLogs](#changelogs)
   - [STCH Repository](#stch-repository)
+    - [**v00.0.3 - Server Management Update - 2023-01-14**](#v0003---server-management-update---2023-01-14)
     - [**v00.0.2 - Update sources and SM - 2023-01-14**](#v0002---update-sources-and-sm---2023-01-14)
     - [**v00.0.1 - First push - 2023-01-14**](#v0001---first-push---2023-01-14)
   - [Cobalt Essentials](#cobalt-essentials)
@@ -72,6 +73,10 @@ This small program will help you edit your server’s settings quick and easy, l
 # ChangeLogs
 
 ## STCH Repository
+
+### **v00.0.3 - Server Management Update - 2023-01-14**
+
+- [x] Added Server Management 2.2
 
 ### **v00.0.2 - Update sources and SM - 2023-01-14**
 

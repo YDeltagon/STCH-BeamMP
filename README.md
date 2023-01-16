@@ -36,7 +36,7 @@ This assumes you have successfully set up your own **BeamMP Server**, there is a
   - [Cobalt Essentials Interface](#cobalt-essentials-interface)
     - [**v0.7.5 - hotfix**](#v075---hotfix)
   - [Server Management](#server-management)
-    - [**v2.1.1**](#v211)
+    - [**v2.2**](#v22)
 
 # [CobaltEssentials](https://github.com/prestonelam2003/CobaltEssentials) by prestonelam2003
 
@@ -77,6 +77,8 @@ This small program will help you edit your server’s settings quick and easy, l
 ### **v00.0.3 - Server Management Update - 2023-01-14**
 
 - [x] Added Server Management 2.2
+- Changelog update
+- Source of SM 2.2 added
 
 ### **v00.0.2 - Update sources and SM - 2023-01-14**
 
@@ -294,7 +296,11 @@ This is the initial GitHub release of this extension.
 
 ## Server Management
 
-### **v2.1.1**
+### **v2.2**
+
+- Added Johnson Valley and old Gridmap maps
+
+### **v2.1.1**<!-- omit in toc -->
 
 - Implemented all DLLs into the main executable. Now all you have to do is copy the executable into the BeamMP folder.
 - Updated the Help-Information window

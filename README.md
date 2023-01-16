@@ -4,15 +4,15 @@ A fork of many GitHub plugins for BeamMP with a touch of me and easy installatio
 
 ## Basic Setup <!-- omit in toc -->
 
-This guide will walk through the most basic process of installing **STCH** onto a **BeamMP Server** and setting yourself as the **owner**
+This guide will walk through the most basic process of installing **STCH Pack** onto a **BeamMP Server** and setting yourself as the **owner**
 
 This assumes you have successfully set up your own **BeamMP Server**, there is a guide **[here](https://wiki.beammp.com/en/home/server-installation)**
 
 - **Download** `/Resources` folder and `*.exe` files of this Repository
 - With the **BeamMP Server** ***NOT*** running:
-  - Extracted
-  - Add `BeamMP.Server.Management.Tool.v2.1.1.exe` on your server Root folder if you want
-- **Launch** the server with `BeamMP.Server.Management.Tool.v2.1.1.exe` or `BeamMP.Server.exe`
+  - Extracted `/Resources` on your **BeamMP Server** folder
+  - Add `BeamMP.Server.Management.Tool.v*.exe` to your **BeamMP Server** folder
+- **Launch** the server with `BeamMP.Server.Management.Tool.v*.exe`
 - In the **server console**, run the command `ce setgroup yourName owner`
   - Replacing `yourName` with your BeamMP username
 - Welcome on your **BeamMP Server**!
@@ -20,11 +20,12 @@ This assumes you have successfully set up your own **BeamMP Server**, there is a
 ## Menu <!-- omit in toc -->
 
 - [CobaltEssentials by prestonelam2003](#cobaltessentials-by-prestonelam2003)
-- [CobaltEssentialsInterface by StanleyDudek](#cobaltessentialsinterface-by-stanleydudek)
   - [Description](#description)
+- [CobaltEssentialsInterface by StanleyDudek](#cobaltessentialsinterface-by-stanleydudek)
+  - [Description](#description-1)
   - [Preview](#preview)
 - [Server Management by SteliosLL](#server-management-by-steliosll)
-  - [Description](#description-1)
+  - [Description](#description-2)
   - [Preview](#preview-1)
 - [ChangeLogs](#changelogs)
   - [STCH Repository](#stch-repository)
@@ -43,6 +44,10 @@ This assumes you have successfully set up your own **BeamMP Server**, there is a
 CobaltEssentials for BeamMP Servers
 
 Copyright (C) 2020, Preston Elam (CobaltTetra) ALL RIGHTS RESERVED
+
+## Description
+
+- A simple plugin for BeamMP servers that adds a few useful commands, features, permissions, and more!
 
 # [CobaltEssentialsInterface](https://github.com/StanleyDudek/CobaltEssentialsInterface) by StanleyDudek
 
@@ -77,8 +82,8 @@ This small program will help you edit your server’s settings quick and easy, l
 ### **v00.0.3 - Server Management Update - 2023-01-14**
 
 - [x] Added Server Management 2.2
-- Changelog update
-- Source of SM 2.2 added
+- Delete Server Management sources files
+  - i don't have the skiil to edit this software
 
 ### **v00.0.2 - Update sources and SM - 2023-01-14**
 

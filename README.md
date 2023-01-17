@@ -29,13 +29,14 @@ This assumes you have successfully set up your own **BeamMP Server**, there is a
   - [Preview](#preview-1)
 - [ChangeLogs](#changelogs)
   - [STCH Repository](#stch-repository)
+    - [**v00.0.4 - Update CEI - 2023-01-17**](#v0004---update-cei---2023-01-17)
     - [**v00.0.3 - Server Management Update - 2023-01-14**](#v0003---server-management-update---2023-01-14)
     - [**v00.0.2 - Update sources and SM - 2023-01-14**](#v0002---update-sources-and-sm---2023-01-14)
     - [**v00.0.1 - First push - 2023-01-14**](#v0001---first-push---2023-01-14)
   - [Cobalt Essentials](#cobalt-essentials)
     - [**v1.7.4**](#v174)
   - [Cobalt Essentials Interface](#cobalt-essentials-interface)
-    - [**v0.7.5 - hotfix**](#v075---hotfix)
+    - [**v0.7.6**](#v076)
   - [Server Management](#server-management)
     - [**v2.2**](#v22)
 
@@ -78,6 +79,10 @@ This small program will help you edit your server’s settings quick and easy, l
 # ChangeLogs
 
 ## STCH Repository
+
+### **v00.0.4 - Update CEI - 2023-01-17**
+
+- [x] Update CEI 0.7.6
 
 ### **v00.0.3 - Server Management Update - 2023-01-14**
 
@@ -206,7 +211,23 @@ Credit to @Dudekahedron for help with both of these problems.
 
 ## Cobalt Essentials Interface
 
-### **v0.7.5 - hotfix**
+### **v0.7.6**
+
+Server:
+
+- Send descriptions only once to save on data
+- Try to process data on the safest joining event
+- Implement a CEI sync request from the client
+
+Client:
+
+- Work with descriptions now being provided only once as necessary
+- Expand reset blocking coverage
+- Capture a map's default environment so reverting is true to the map's defaults
+- Disabled database filtering which severely degraded performance
+- Add "add/remove to/from race" button to players in Players tab, so players can be added/removed from race countdown by players with mod and up permissions or Race level UI permissions
+
+### **v0.7.5 - hotfix**<!-- omit in toc -->
 
 - Fixed an oversight which led to default players not having UI.
 - Actually fixed the server side CPU usage problem.

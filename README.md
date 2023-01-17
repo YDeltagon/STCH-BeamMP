@@ -38,7 +38,7 @@ This assumes you have successfully set up your own **BeamMP Server**, there is a
   - [Cobalt Essentials](#cobalt-essentials)
     - [**v1.7.4**](#v174)
   - [Cobalt Essentials Interface](#cobalt-essentials-interface)
-    - [**v0.7.6**](#v076)
+    - [**v0.7.8**](#v078)
   - [Cobalt Essentials NameTag](#cobalt-essentials-nametag)
     - [**v3.x**](#v3x)
   - [Server Management](#server-management)
@@ -222,7 +222,17 @@ Credit to @Dudekahedron for help with both of these problems.
 
 ## Cobalt Essentials Interface
 
-### **v0.7.6**
+### **v0.7.8**
+
+- fixed group removal
+
+### **v0.7.7**<!-- omit in toc -->
+
+- fixed whitelist operation
+- fix for flicker on fresh install
+- remove leftover debug print
+
+### **v0.7.6**<!-- omit in toc -->
 
 Server:
 

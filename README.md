@@ -23,12 +23,14 @@ This assumes you have successfully set up your own **BeamMP Server**, there is a
   - [Description](#description)
 - [CobaltEssentialsInterface by StanleyDudek](#cobaltessentialsinterface-by-stanleydudek)
   - [Description](#description-1)
-  - [Preview](#preview)
-- [Server Management by SteliosLL](#server-management-by-steliosll)
+- [CobaltEssentialsNameTag by 20dka](#cobaltessentialsnametag-by-20dka)
   - [Description](#description-2)
-  - [Preview](#preview-1)
+- [Server Management by SteliosLL](#server-management-by-steliosll)
+  - [Description](#description-3)
+  - [Preview](#preview)
 - [ChangeLogs](#changelogs)
   - [STCH Repository](#stch-repository)
+    - [**v00.0.5 - Add plugins - 2023-01-17**](#v0005---add-plugins---2023-01-17)
     - [**v00.0.4 - Update CEI - 2023-01-17**](#v0004---update-cei---2023-01-17)
     - [**v00.0.3 - Server Management Update - 2023-01-14**](#v0003---server-management-update---2023-01-14)
     - [**v00.0.2 - Update sources and SM - 2023-01-14**](#v0002---update-sources-and-sm---2023-01-14)
@@ -37,6 +39,8 @@ This assumes you have successfully set up your own **BeamMP Server**, there is a
     - [**v1.7.4**](#v174)
   - [Cobalt Essentials Interface](#cobalt-essentials-interface)
     - [**v0.7.6**](#v076)
+  - [Cobalt Essentials NameTag](#cobalt-essentials-nametag)
+    - [**v3.x**](#v3x)
   - [Server Management](#server-management)
     - [**v2.2**](#v22)
 
@@ -62,9 +66,12 @@ A Dear ImGui based interface for BeamMP Servers running CobaltEssentials
 - Handy `Join Race` and `Race Countdown` buttons to freeze all players in place, notify and countdown, and then release everyone for perfect race starts!
 - And more, all via the interface!
 
-## Preview
+# [CobaltEssentialsNameTag](https://github.com/20dka/CE-nicknameTags) by 20dka
 
-![image](https://user-images.githubusercontent.com/49531350/198840124-8ed08ef6-7193-42ea-a3b5-54b3adcc4957.png)
+## Description
+
+ - A CobaltEssentials extension to provide CE group nametags on BeamMP Servers
+   - For example if you're the owner, your nametag will have an [Owner] prefix for others
 
 # [Server Management](https://github.com/SteliosLL/BeamMP-Server-Management-Tool) by SteliosLL
 
@@ -79,6 +86,10 @@ This small program will help you edit your server’s settings quick and easy, l
 # ChangeLogs
 
 ## STCH Repository
+
+### **v00.0.5 - Add plugins - 2023-01-17**
+
+- [x] Added CobaltEssentialsNameTag 3.x
 
 ### **v00.0.4 - Update CEI - 2023-01-17**
 
@@ -319,6 +330,12 @@ This release improves time play reliability, has some small UI corrections, fixe
 This is the initial GitHub release of this extension.
 
 **More Changelog [here](https://github.com/StanleyDudek/CobaltEssentialsInterface/releases)**
+
+## Cobalt Essentials NameTag
+
+### **v3.x**
+
+- send nametags on join, add comments
 
 ## Server Management
 

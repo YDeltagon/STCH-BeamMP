@@ -30,6 +30,7 @@ This assumes you have successfully set up your own **BeamMP Server**, there is a
   - [Preview](#preview)
 - [ChangeLogs](#changelogs)
   - [STCH Repository](#stch-repository)
+    - [**v00.0.6 - CEI Update - 2023-01-19**](#v0006---cei-update---2023-01-19)
     - [**v00.0.5 - Add plugins - 2023-01-17**](#v0005---add-plugins---2023-01-17)
     - [**v00.0.4 - Update CEI - 2023-01-17**](#v0004---update-cei---2023-01-17)
     - [**v00.0.3 - Server Management Update - 2023-01-14**](#v0003---server-management-update---2023-01-14)
@@ -38,7 +39,7 @@ This assumes you have successfully set up your own **BeamMP Server**, there is a
   - [Cobalt Essentials](#cobalt-essentials)
     - [**v1.7.4**](#v174)
   - [Cobalt Essentials Interface](#cobalt-essentials-interface)
-    - [**v0.7.8**](#v078)
+    - [**v0.7.9**](#v079)
   - [Cobalt Essentials NameTag](#cobalt-essentials-nametag)
     - [**v3.x**](#v3x)
   - [Server Management](#server-management)
@@ -86,6 +87,10 @@ This small program will help you edit your server’s settings quick and easy, l
 # ChangeLogs
 
 ## STCH Repository
+
+### **v00.0.6 - CEI Update - 2023-01-19**
+
+- [x] Update CE 1.7.9
 
 ### **v00.0.5 - Add plugins - 2023-01-17**
 
@@ -222,7 +227,22 @@ Credit to @Dudekahedron for help with both of these problems.
 
 ## Cobalt Essentials Interface
 
-### **v0.7.8**
+### **v0.7.9**
+client:
+- use child windows
+- fix nametags whitelist
+- add reset functionality to interface perms
+- display CEI_VERSION
+
+server:
+- add CEI_VERSION
+- fix restrictions
+- utilize interface resets
+- fix nametags reset
+- fix random vehicles.json loading spam
+
+
+### **v0.7.8**<!-- omit in toc -->
 
 - fixed group removal
 

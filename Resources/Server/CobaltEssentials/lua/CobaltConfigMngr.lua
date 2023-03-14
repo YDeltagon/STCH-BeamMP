@@ -14,9 +14,9 @@ commands = CobaltDB.new("commands")
 vehiclePermissions = CobaltDB.new("vehicles")
 config = CobaltDB.new("config")
 
-beamMPconfig = {}
-currentcfg = {}
-beamMPcfg = utils.readCfg("ServerConfig.toml").General
+beamMPconfig = {} -- proxy table
+local currentcfg = {} -- live config
+local beamMPcfg = utils.readCfg("ServerConfig.toml").General -- starting config
 
 
 
@@ -74,7 +74,7 @@ end
 ------------------------------------------------------DEFAULT-CONFIGS------------------------------------------------------
 --THIS IS NOT THE NEW CONFIG, DO NOT CHANGE THESE FOR STARTERS, IT WONT DO ANYTHING.
 --IF YOU ARE LOOKING FOR THE CONFIG, PLEASE REFER TO: beamMPserver/Resources/Server/CobaltEssentials/CobaltDB for where the json config is now stored.
-local defaultConfig = 
+local defaultConfig =
 {
 	commandPrefix =		{value = "/",			description = "The character placed at the beginning of a chat message when using a command"},
 	consolePrefix =		{value = "ce ",			description = "The text placed at the beginning of a console command"},
@@ -91,7 +91,7 @@ local defaultConfig =
 	CobaltDBport =		{value = 10814,			description = "The port used for internal CobaltDB communications, please keep it unique to each server or there may be interference."}
 }
 
-local defaultPermissions = 
+local defaultPermissions =
 {
 	--note: the numbers are displayed as strings because they must be, when referenced, everything will be converted to numbers appropriately.
 	spawnVehicles =	{[0] = true, description = "If you may spawn vehicles or not."},
@@ -99,12 +99,12 @@ local defaultPermissions =
 	vehicleCap =	{[1] = 1, [3] = 2, [5] = 5, [10] = 10, description = "The  amount of vehicles that may be spawned based on permission level."}
 }
 
-local defaultCommands = 
+local defaultCommands =
 {
 	--orginModule[commandName] is where the command is executed from
 	--Source-Limit-Map [0:no limit | 1:Chat Only | 2:RCON Only]
 	--A star before an argument actually means the opposite of what it would traditionally mean, a '*' means the argument is optional.
-	help =			{orginModule = "CC",	level = 0,	sourceLimited = 0,	arguments = {"*command"},						description = "Lists all commands accessible by the player"},
+	help =			{orginModule = "CC",	level = 0,	sourceLimited = 0,	arguments = {"*command"},			description = "Lists all commands accessible by the player"},
 	status =		{orginModule = "CC",	level = 0,	sourceLimited = 0,	arguments = 0,						description = "Lists all the players on the server with their ids and basic information on the server"},
 	statusdetail =	{orginModule = "CC",	level = 0,	sourceLimited = 0,	arguments = 0,						description = "Lists all the players on the server in detail along with basic server information"},
 	connected =		{orginModule = "CC",	level = 0,	sourceLimited = 0,	arguments = 0,						description = "Get the connect stage of all players on the server"},
@@ -122,11 +122,12 @@ local defaultCommands =
 	setperm =		{orginModule = "CC",	level = 10,	sourceLimited = 0,	arguments = {"player","value"},		description = "Change a player's permission level"},
 	setgroup =		{orginModule = "CC",	level = 10,	sourceLimited = 0,	arguments = {"player","value"},		description = "Set a player's permission group"},
 	lua =			{orginModule = "CC",	level = 10,	sourceLimited = 2,	arguments = {"command"},			description = "Execute Lua, return the desired reply."},
+	reload =		{orginModule = "CC",	level = 10,	sourceLimited = 0,	arguments = {"extension"},			description = "Reloads the given Cobalt Extenion"},
 	togglechat =	{orginModule = "CC",	level =	10,	sourceLimited = 2,	arguments = 0,						description = "Toggles viewing chat in the RCON client"},
 	stop =			{orginModule = "CC",	level = 10,	sourceLimited = 0,	arguments = 0,						description = "Stops the server"}
 }
 
-local defaultVehiclePermissions = 
+local defaultVehiclePermissions =
 {
 	default =	{level = 1}
 }
